@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenClean Entrümpelung</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #21c95b;
+      --green-dark: #15893b;
+      --black: #181818;
+      --white: #f4f4f4;
+      --gray: #262626;
+    }
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: var(--black);
+      color: var(--white);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: var(--green-dark);
+      padding: 24px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+    nav {
+      margin-top: 12px;
+    }
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--green);
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 380px;
+      background: linear-gradient(135deg, var(--black) 70%, var(--green-dark) 100%);
+      text-align: center;
+      padding: 32px 10px 42px 10px;
+    }
+    .hero h2 {
+      font-size: 2.1rem;
+      color: var(--green);
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--white);
+      max-width: 500px;
+      margin-bottom: 32px;
+    }
+    .hero button {
+      background: var(--green);
+      color: var(--black);
+      border: none;
+      padding: 14px 38px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: 0 4px 20px rgba(33,201,91,0.08);
+    }
+    .hero button:hover {
+      background: var(--green-dark);
+      color: var(--white);
+    }
+    .services {
+      background: var(--gray);
+      border-radius: 32px 32px 0 0;
+      padding: 48px 10px 48px 10px;
+      margin-top: -16px;
+    }
+    .services h3 {
+      color: var(--green);
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+    .service {
+      background: var(--black);
+      padding: 28px 30px;
+      border-radius: 20px;
+      box-shadow: 0 2px 12px rgba(33,201,91,0.08);
+      width: 250px;
+      min-height: 170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .service span {
+      font-size: 2.4rem;
+      color: var(--green);
+      margin-bottom: 18px;
+    }
+    .service p {
+      font-size: 1.1rem;
+      color: var(--white);
+      margin: 0;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 32px 8px;
+      background: var(--green-dark);
+      color: var(--white);
+      font-size: 1rem;
+      margin-top: 24px;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 900px) {
+      .service-list { flex-direction: column; align-items: center; }
+      .service { width: 90%; max-width: 400px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GreenClean Entrümpelung</h1>
+    <nav>
+      <a href="#services">Leistungen</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Entrümpelung & Haushaltsauflösung in ganz Deutschland</h2>
+    <p>
+      Zuverlässige und schnelle Entrümpelung von Häusern, Wohnungen, Kellern und Büros.<br>
+      <b>Umweltfreundlich. Transparent. Stressfrei.</b>
+    </p>
+    <button onclick="window.location.href='#contact'">Jetzt Angebot anfordern</button>
+  </section>
+
+  <section class="services" id="services">
+    <h3>Unsere Leistungen</h3>
+    <div class="service-list">
+      <div class="service">
+        <span>🏠</span>
+        <p>Entrümpelung von Häusern & Wohnungen</p>
+      </div>
+      <div class="service">
+        <span>🚚</span>
+        <p>Umweltgerechte Entsorgung & Recycling</p>
+      </div>
+      <div class="service">
+        <span>🪜</span>
+        <p>Keller, Dachboden, Garage & Lager</p>
+      </div>
+      <div class="service">
+        <span>🧹</span>
+        <p>Endreinigung & besenreine Übergabe</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero" id="contact" style="background: linear-gradient(135deg, var(--green-dark) 55%, var(--black) 100%); min-height: 250px;">
+    <h2>Kontakt & Angebot</h2>
+    <p>Rufen Sie uns an unter <b>+49 123 456 7890</b> oder schreiben Sie uns:<br>
+      <a href="mailto:info@greenclean.de" style="color:var(--green);font-weight:bold;">info@greenclean.de</a>
+    </p>
+    <button onclick="window.location.href='mailto:info@greenclean.de'">Jetzt Kontakt aufnehmen</button>
+  </section>
+
+  <footer>
+    &copy; 2025 GreenClean Entrümpelung &ndash; Alle Rechte vorbehalten
+  </footer>
+</body>
+</html>
